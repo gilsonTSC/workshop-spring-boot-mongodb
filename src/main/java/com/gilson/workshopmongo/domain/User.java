@@ -18,10 +18,6 @@ public class User implements Serializable{
 	private String name;
 	private String email;
 	
-	/**
-	 * @DBFef É para referencia outro objeto.
-	 * lazy = true É para trazer os objetos referenciados apenas quando solicitados.
-	 */
 	@DBRef(lazy = true)
 	private List<Post> posts = new ArrayList<>();
 	
